@@ -30,8 +30,8 @@ def test(rand_list):
 
     print(
         f""" 
-		length : {len(rand_list)}  
-		time   : {(end - start) * 1000}
+        length : {len(rand_list)}  
+        time   : {(end - start) * 1000}
 		"""
     )
 
