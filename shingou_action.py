@@ -15,7 +15,7 @@ def act_shingou() -> Shingou:
     args1 = int(args[1])
 
     if args1 not in [data.value for data in Shingou]:
-        raise "信号機の色に対応していません"
+        print("信号機の色に対応していません")
 
     if args1 is Shingou.RED.value:
         print("とまれ")
