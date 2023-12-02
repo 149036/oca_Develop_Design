@@ -30,11 +30,11 @@ print(
 )
 b = gen()
 print(
-    f"""
-b = {lam(next(b))
-		(next(b))
-		(next(b))}
-"""
+    f"""b = {
+    (lam(next(b))
+        (next(b))
+        (next(b)))
+    }"""
 )
 
 import sys
@@ -43,6 +43,13 @@ import sys
 args = sys.argv
 try:
     args = list(map(int, args[1:]))
-    print(f"{lam(args[0])(args[1])(args[2])}")
+    print(
+        f"""sum(args) = {
+        (lam
+            (args[0])
+            (args[1])
+            (args[2]))
+        }"""
+    )
 except:
     print(f"error : excercise.py 数値 数値 数値")
