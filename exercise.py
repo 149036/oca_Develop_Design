@@ -1,4 +1,4 @@
-lam = lambda x=1: lambda y=2: lambda z=3: x + y + z
+lam = lambda x: lambda y: lambda z: x + y + z
 
 curry = lam(1)(2)
 curry2 = lam(3)
